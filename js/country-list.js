@@ -1,3 +1,5 @@
+
+
 let country_code = {
 	"AED" : "AE",
     "AFN" : "AF",
