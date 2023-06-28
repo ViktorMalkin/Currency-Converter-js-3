@@ -1,3 +1,4 @@
+
 const dropList = document.querySelectorAll('.drop-list select'),
 fromCurrency = document.querySelector('.from select'),
 toCurrency = document.querySelector('.to select'),
