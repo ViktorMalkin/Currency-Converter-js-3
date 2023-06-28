@@ -33,10 +33,10 @@ function loadFlag(element) {
 	}
 }
 
-//window.addEventListener("load", () => {
+window.addEventListener("load", () => {
 	//e.preventDefault();
-	//getExchangeRate();
-//});
+	getExchangeRate();
+});
 
 getButton.addEventListener("click", e => {
 	e.preventDefault();
@@ -55,14 +55,14 @@ exchangeIcon.addEventListener("click", () => {
 
 function getExchangeRate() {
 	const amount = document.querySelector(".amount input"); 
-	//exchangeRateTxt = document.querySelector(".exchage-rate");
+	exchangeRateTxt = document.querySelector(".exchange-rate");
 	let amountVal = amount.value;
 	if(amountVal == "" || amountVal == "0") {
 		amount.value = "1";
 		amountVal = 1;
 	}
 
-	//exchangeRateTxt.innerText = "Getting exchage rate...";
+	exchangeRateTxt.innerText = "Getting exchage rate...";
 
 	let url = `https://v6.exchangerate-api.com/v6/${"09e609fd03786c3dc3f3856f"}/latest/${fromCurrency.value}`;
 	fetch(url).then(response => response.json()).then(result => {
