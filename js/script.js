@@ -75,7 +75,7 @@ function getExchangeRate() {
 		//console.log(exchangeRate);
 		let totalExchangeRate = (amountVal * exchangeRate).toFixed(2);
 		//console.log(totalExchangeRate);
-		const exchangeRateTxt = document.querySelector(".exchange-rate");
+		//const exchangeRateTxt = document.querySelector(".exchange-rate");
 		exchangeRateTxt.innerText = `${amountVal} ${fromCurrency.value} = ${totalExchangeRate} ${toCurrency.value}`;
 		
 	}).catch(() => {
