@@ -124,4 +124,5 @@ form button {
 	font-size: 17px;
 	cursor: pointer;
 	background:  rgb(0, 126, 128);
+	transition: all 0.5s;
 }
