@@ -108,6 +108,12 @@ form .drop-list {
 }
 
 form .exchange-rate {
+	border: 1px dotted gray;
+	border-radius: 5px;
+	padding: 7px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	font-size: 17px;
 	margin: 20px 0 30px;
 }
