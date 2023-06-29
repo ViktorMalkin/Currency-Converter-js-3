@@ -29,7 +29,7 @@ for(let i = 0; i < dropList.length; i++) {
 }
 
 function loadFlag(element) {
-	for(code in country_code) {
+	for( let code in country_code) {
 		if(code == element.value) {
 			let imgTag = element.parentElement.querySelector("img");
 			imgTag.src = `https://flagsapi.com/${country_code[code]}/flat/64.png`
