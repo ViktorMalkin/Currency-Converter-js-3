@@ -16,6 +16,7 @@ for(let i = 0; i < dropList.length; i++) {
 		//}
 		//console.log(currency_code)
 		
+		let selected = i == 0 ? currency_code == "USD" ? "selected" : "" : currency_code == "PLN" ? "selected" : "";
 		
 		let optionTag = `<option value="${currency_code}" ${selected}>${currency_code}</option>`;
 
