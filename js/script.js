@@ -6,7 +6,7 @@ toCurrency = document.querySelector('.to select'),
 getButton = document.querySelector('form button');
 
 for(let i = 0; i < dropList.length; i++) {
-	for(currency_code in country_code) {
+	for( let currency_code in country_code) {
 		let selected;
 		if(i == 0){
 			selected = currency_code == "USD" ? "selected" : "";
